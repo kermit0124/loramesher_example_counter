@@ -1,0 +1,33 @@
+dependencies:
+  LoRaMesher:
+    component_hash: 39f797a556d61e483ee1a06763efd2f3deff694ec8ea8dddc734020a817c387e
+    dependencies:
+    - name: idf
+      version: '>=5.1'
+    - git: https://github.com/jgromes/RadioLib.git
+      name: RadioLib
+      public: true
+    source:
+      git: https://github.com/LoRaMesher/LoRaMesher.git
+      path: .
+      type: git
+    version: 67582dd8d51d89a1c85da13055fae653c6105f7a
+  RadioLib:
+    component_hash: a90cf8ebbb2ce75883015bef371abcf870a36d31699a4620d060ebd79cfb21ae
+    dependencies:
+    - name: idf
+      version: '>=4.1'
+    source:
+      git: https://github.com/jgromes/RadioLib.git
+      path: .
+      type: git
+    version: a692b72347b3ddf4ce225b0afc249c1b5a445063
+  idf:
+    source:
+      type: idf
+    version: 5.3.1
+direct_dependencies:
+- LoRaMesher
+manifest_hash: fcf280e6950ce2048373cac17490ff12753bea169126aff1cab352cbbdd0eab0
+target: esp32s3
+version: 2.0.0

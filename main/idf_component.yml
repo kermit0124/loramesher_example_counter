@@ -1,0 +1,5 @@
+## IDF Component Manager Manifest File
+dependencies:
+  LoRaMesher:
+    git: https://github.com/LoRaMesher/LoRaMesher.git
+      
